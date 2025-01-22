@@ -1,0 +1,11 @@
+ejecutar aplicacion 
+python app.py
+
+crear un entorno virtual 
+python -m venv venv
+
+activar entorno virtual 
+.\venv\Scripts\activate
+
+empaqueter proyecton el archivo app.spec
+pyinstaller --noconfirm app.spec

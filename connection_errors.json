@@ -1,0 +1,2786 @@
+[
+    {
+        "timestamp": "2025-01-08T13:22:40.968407",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "Ping error",
+        "details": "Object of type CompletedProcess is not JSON serializable"
+    },
+    {
+        "timestamp": "2025-01-08T13:22:49.586299",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:22:53.708358",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:22:57.830696",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:23:01.957467",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:23:06.067507",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:23:10.153261",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:23:14.249191",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:23:18.366659",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:23:22.497953",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:23:26.624442",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:23:30.766264",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:23:34.891443",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:23:39.006021",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:23:43.143751",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:23:47.270787",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:23:51.395868",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:23:55.506496",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:23:59.631247",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:24:03.736354",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:24:07.849764",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:24:15.860817",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:24:19.957484",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:24:24.050812",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:24:28.128569",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:24:32.231461",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:24:36.327475",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:24:40.415997",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:24:44.483423",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:24:48.575851",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:24:52.653157",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:24:56.717478",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:25:00.810958",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:25:04.919770",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:25:09.019665",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:25:13.078257",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:25:17.149921",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:25:21.242744",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:25:25.350348",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:25:29.431524",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:25:33.536241",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:25:37.632073",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:25:41.730452",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:25:45.789776",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:25:49.857738",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:25:53.928146",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:25:58.025021",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:26:02.121063",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:26:06.195095",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:26:10.289791",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:26:14.331760",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:26:18.397309",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:26:22.500747",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:26:26.600032",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:26:30.711559",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:26:34.798624",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:26:38.904537",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:26:42.978996",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:26:47.090014",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:26:51.181852",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:26:55.255203",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:26:59.346403",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:27:03.441009",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:27:07.553904",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:27:11.672551",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:27:15.754830",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:27:19.840768",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:27:23.917166",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:27:27.996511",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:27:32.099102",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:27:36.171372",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:27:40.244426",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:27:44.292297",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:27:48.367086",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:27:52.467615",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:27:56.571710",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:28:00.661406",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:28:04.745189",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:28:08.852157",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:28:12.939431",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:28:17.023917",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:28:21.084889",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:28:25.173356",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:28:29.310058",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:28:33.422361",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:28:37.478622",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:28:41.580213",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:28:53.382457",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:28:57.442131",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:29:01.563367",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:29:05.645871",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:29:09.757556",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:29:13.809735",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:29:17.884604",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:29:21.947790",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:29:26.002442",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:29:30.132560",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:29:34.245893",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:29:38.321408",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:29:42.399763",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:29:46.605865",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:29:50.681989",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:29:54.757151",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:29:58.816586",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:30:02.874985",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:30:06.920906",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:30:10.974447",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:30:15.061159",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:30:19.048412",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:30:23.083773",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:30:27.151051",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:30:31.224114",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:30:35.318710",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:30:39.423685",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:30:43.515489",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:30:47.557109",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:30:51.683689",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:30:55.788276",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:30:59.676637",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:31:03.729768",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:31:07.790242",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:31:11.872756",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:31:15.934231",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:31:20.015179",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:31:24.107657",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:31:28.223793",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:31:32.326049",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:31:36.444575",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:31:40.538533",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:31:44.642811",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:31:48.727444",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:31:52.831052",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:31:56.884431",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:32:00.990683",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:32:05.077717",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:32:09.190157",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:32:13.295514",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:32:17.391081",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:32:21.474863",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:32:25.593910",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:32:29.673833",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:32:33.759266",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:32:37.813739",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:32:41.875181",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:32:45.997484",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:32:50.107283",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:32:54.218163",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:32:58.306901",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:33:02.389929",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:33:06.458467",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:33:10.558543",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:33:14.660947",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:33:18.760486",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:33:22.864221",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:33:26.972887",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:33:31.056409",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:33:35.158176",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:33:39.249141",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:33:43.354035",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:33:47.438889",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:33:51.509361",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:33:55.614470",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:33:59.737359",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:34:03.813671",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:34:07.902446",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:34:11.997813",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:34:16.118851",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:34:20.199388",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:34:24.301792",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:34:28.410374",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:34:32.523643",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:34:36.632759",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:34:40.735828",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:34:44.853246",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:34:48.957288",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:34:53.010363",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:34:57.075512",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:35:01.190893",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:35:05.309453",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:35:09.394367",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:35:13.499413",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:35:17.588515",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:35:21.695008",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:35:25.775717",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:35:29.832722",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:35:33.937598",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:35:38.027767",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:35:42.104833",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:35:46.204666",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:35:50.308626",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:35:54.416733",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:35:58.506682",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:36:02.606055",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:36:06.730554",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:36:10.805923",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:36:14.912074",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:36:19.024193",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:36:23.110354",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:36:27.207374",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:36:31.318774",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:36:35.431587",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:36:39.498181",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:36:43.579251",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:36:47.646556",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:36:51.730004",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:36:55.800593",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:36:59.891054",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:37:03.972766",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:37:08.079188",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:37:12.159178",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:37:16.255884",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:37:20.369329",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:37:24.455922",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:37:28.556002",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:37:32.666601",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:37:36.758149",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:37:40.883068",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:37:44.980720",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:37:49.077656",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:37:53.191135",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:37:57.312591",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:38:01.417008",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:38:05.521214",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:38:09.631822",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:38:13.747178",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:38:17.806890",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:38:21.868349",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:38:25.958118",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:38:30.044032",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:38:34.131332",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:38:38.246877",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:38:42.367993",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:38:46.467878",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:38:50.604796",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:38:54.725012",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:38:58.836165",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:39:02.901107",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:39:07.008186",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:39:11.108779",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:39:15.194093",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:39:19.317428",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:39:23.414127",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:39:27.519628",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:39:31.635222",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:39:35.741801",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:39:39.804748",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:39:43.871887",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:39:47.982238",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:39:52.077019",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:39:56.146939",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:40:00.221765",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:40:04.302658",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:40:08.396962",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:40:12.515683",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:40:16.625029",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:40:20.739127",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:40:24.848822",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:40:28.914431",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:40:33.002591",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:40:37.113902",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:40:41.225557",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:40:45.333007",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:40:49.412794",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:40:53.515651",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:40:57.627113",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:41:01.748211",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:41:05.802604",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:41:09.911410",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:41:13.988162",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:41:18.090200",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:41:22.155035",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:41:26.277812",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:41:30.387035",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:41:34.503828",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:41:38.612757",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:41:42.723772",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:41:46.848458",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:41:50.947468",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:41:55.057058",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:41:59.140987",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:42:03.245763",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:42:07.334876",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:42:11.474845",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:42:15.573064",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:42:19.660223",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:42:23.753999",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:42:27.831064",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:42:31.931265",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:42:36.016492",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:42:40.143368",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:42:44.211124",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:42:48.317317",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:42:52.420286",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:42:56.520413",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:43:00.637416",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:43:04.756593",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:43:08.859167",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:43:12.946580",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:43:17.055186",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:43:21.161102",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:43:25.265235",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:43:29.367378",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:43:33.462597",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:43:37.568823",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:43:41.648565",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:43:45.761133",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:43:49.831291",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:43:53.881607",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:43:57.972701",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:44:02.088618",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:44:06.165803",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:44:10.250424",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:44:14.367481",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:44:18.466098",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:44:22.598215",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:44:26.680349",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:44:30.812370",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:44:34.916303",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:44:39.012820",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:44:43.118377",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:44:47.205313",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:44:51.286690",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:44:55.390628",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:44:59.525382",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:45:03.614847",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:45:07.720388",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:45:11.804041",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:45:15.908953",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:45:19.993293",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:45:24.089372",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:45:28.189250",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:45:32.309676",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:45:36.423619",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:45:40.532786",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:45:44.640127",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:45:48.778937",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:45:52.891322",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:45:57.001340",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:46:01.098331",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:46:05.195938",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:46:09.308120",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:46:13.409269",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:46:17.554652",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:46:21.666135",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:46:25.778881",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:46:29.838401",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:46:33.918410",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:46:38.028842",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:46:42.125891",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:46:46.242344",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:46:50.341436",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:46:54.464989",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:46:58.574724",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:47:02.671611",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:47:06.795798",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:47:10.868314",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:47:14.939866",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:47:19.023648",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:47:23.112958",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:47:27.202203",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:47:31.303667",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:47:35.407485",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:47:39.499594",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:47:43.599998",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:47:47.694364",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:47:51.788544",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:47:55.892215",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:47:59.987506",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:48:04.113312",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:48:08.215309",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:48:12.315909",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:48:16.398155",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:48:20.478461",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:48:24.564484",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:48:28.661066",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:48:32.770864",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:48:36.835693",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:48:40.939000",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:48:45.027251",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:48:49.094353",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:48:53.176974",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:48:57.270157",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:49:01.328542",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:49:05.419744",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:49:09.523081",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:49:13.619972",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:49:17.736015",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:49:21.796730",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:49:25.921435",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:49:30.015676",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:49:34.066126",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:49:38.172486",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:49:42.265301",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:49:46.394306",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:49:50.511129",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-08T13:49:54.595630",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "exito",
+        "details": "Ping fallido (sin respuesta)"
+    },
+    {
+        "timestamp": "2025-01-10T11:14:20.424062",
+        "ip": "192.168.1.1",
+        "name": "gpon.net",
+        "error_type": "UPS Agregada"
+    },
+    {
+        "timestamp": "2025-01-10T11:14:29.267191",
+        "ip": "192.168.1.4",
+        "name": "192.168.1.4",
+        "error_type": "UPS Agregada"
+    }
+]

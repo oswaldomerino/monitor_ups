@@ -1,0 +1,2 @@
+# Monitorización de UPS
+ Es una aplicación diseñada para la supervisión y gestión remota de Unidades de Suministro Ininterrumpido (UPS). Su objetivo es proporcionar una solución eficiente para el monitoreo del estado de los UPS en entornos críticos, como centros de datos, oficinas y entornos industriales, permitiendo a los usuarios obtener información en tiempo real sobre el rendimiento, capacidad, y posibles fallos del equipo.
