@@ -2782,5 +2782,54 @@
         "ip": "192.168.1.4",
         "name": "192.168.1.4",
         "error_type": "UPS Agregada"
+    },
+    {
+        "timestamp": "2025-02-17T11:23:08.253120",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "High Latency",
+        "details": "Ping failed for 192.168.1.10, latency unknown"
+    },
+    {
+        "timestamp": "2025-02-17T12:03:32.277481",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "HTTPS cerrado",
+        "details": "El puerto 443 en 192.168.1.10 est\u00e1 cerrado."
+    },
+    {
+        "timestamp": "2025-02-17T12:03:34.428621",
+        "ip": "192.168.1.4",
+        "name": "192.168.1.4",
+        "error_type": "HTTPS cerrado",
+        "details": "El puerto 443 en 192.168.1.4 est\u00e1 cerrado."
+    },
+    {
+        "timestamp": "2025-02-17T12:03:43.263710",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "HTTPS cerrado",
+        "details": "El puerto 443 en 192.168.1.10 est\u00e1 cerrado."
+    },
+    {
+        "timestamp": "2025-02-17T12:03:45.408816",
+        "ip": "192.168.1.4",
+        "name": "192.168.1.4",
+        "error_type": "HTTPS cerrado",
+        "details": "El puerto 443 en 192.168.1.4 est\u00e1 cerrado."
+    },
+    {
+        "timestamp": "2025-02-17T12:03:54.274001",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "HTTPS cerrado",
+        "details": "El puerto 443 en 192.168.1.10 est\u00e1 cerrado."
+    },
+    {
+        "timestamp": "2025-02-17T12:03:56.413551",
+        "ip": "192.168.1.4",
+        "name": "192.168.1.4",
+        "error_type": "HTTPS cerrado",
+        "details": "El puerto 443 en 192.168.1.4 est\u00e1 cerrado."
     }
 ]

@@ -109,7 +109,7 @@ DATA = {}
 task_queue = queue.Queue()
 LOCK = threading.Lock()
 DISCONNECTED_DEVICES = set()
-VALIDATION_QUEUE = set()
+
 
 # Función para realizar consultas SNMP
 def snmp_query(ip, oids):
@@ -151,10 +151,10 @@ def execute_ping(ip, timeout):
     """Ejecuta un ping con un timeout específico."""
     return subprocess.run(
         ["ping", "-n", "1", ip],
-        stdout=subprocess.PIPE,
-        stderr=subprocess.PIPE,
-        text=True,
-        creationflags=subprocess.CREATE_NO_WINDOW
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            text=True,
+            creationflags=subprocess.CREATE_NO_WINDOW  # Evitar que se abra una ventana de consola
     )
 
 
@@ -167,15 +167,16 @@ def check_https(ip):
         return False
 
 
-def validate_disconnection(ups, max_attempts=5, timeout=2):
-    """Ejecuta intentos adicionales en paralelo solo para dispositivos en la lista de validación."""
+def validate_disconnection(ups, max_attempts=10, timeout=2):
+    """Ejecuta intentos adicionales en paralelo solo para dispositivos desconectados."""
     global DATA
 
     for attempt in range(max_attempts):
-        time.sleep(1)
+        time.sleep(1)  # Espera mínima entre intentos para no sobrecargar la red
         ping_output = execute_ping(ups["ip"], timeout)
 
         if ping_output.returncode == 0:
+            # Si responde en algún intento, confirmar conexión y actualizar UI
             for line in ping_output.stdout.splitlines():
                 if "tiempo=" in line.lower():
                     latency = line.split("tiempo=")[-1].split("ms")[0].strip()
@@ -186,21 +187,15 @@ def validate_disconnection(ups, max_attempts=5, timeout=2):
                             DATA[ups["ip"]]["latency"] = float(latency)
                             DATA[ups["ip"]]["ping_response"] = "Ping Exitoso"
 
-                        DISCONNECTED_DEVICES.discard(ups["ip"])
-                        VALIDATION_QUEUE.discard(ups["ip"])
-#
-#                    log_connection_error({
-#                        "timestamp": datetime.now().isoformat(),
-#                        "ip": ups["ip"],
-#                        "name": ups["name"],
-#                        "error_type": "Recuperado",
-#                        "details": "UPS volvió a responder al ping."
-#                    })
+                        DISCONNECTED_DEVICES.discard(ups["ip"])  # Eliminar de lista de desconectados
 
+                    # Emitir actualización a la interfaz
                     socketio.emit("new_data", DATA[ups["ip"]])
-                    return  
 
-    # Si aún no responde al ping, validar HTTPS nuevamente
+                    
+                    return  # Salir del hilo si se recupera
+
+    # **Evitar falsos positivos si HTTPS está activo**
     if check_https(ups["ip"]):
         with LOCK:
             if ups["ip"] in DATA:
@@ -208,37 +203,37 @@ def validate_disconnection(ups, max_attempts=5, timeout=2):
                 DATA[ups["ip"]]["latency"] = None
                 DATA[ups["ip"]]["ping_response"] = "ICMP bloqueado"
 
-            DISCONNECTED_DEVICES.discard(ups["ip"])
-            VALIDATION_QUEUE.discard(ups["ip"])
+            DISCONNECTED_DEVICES.discard(ups["ip"])  # Eliminar de lista de desconectados
 
-#        log_connection_error({
-#            "timestamp": datetime.now().isoformat(),
-#            "ip": ups["ip"],
-#            "name": ups["name"],
-#            "error_type": "Advertencia: ICMP bloqueado",
-#            "details": "El Ping falló, pero HTTPS está activo."
-#        })
-
+        # Emitir actualización a la interfaz
         socketio.emit("new_data", DATA[ups["ip"]])
-        return  
 
-    # Si no responde a ping ni HTTPS después de múltiples intentos, marcar como desconectado
+        log_connection_error({
+            "timestamp": datetime.now().isoformat(),
+            "ip": ups["ip"],
+            "name": ups["name"],
+            "error_type": "Advertencia: ICMP bloqueado",
+            "details": "El Ping falló, pero HTTPS está activo."
+        })
+        return  # No marcar como desconectado
+
+    # **Si después de max_attempts sigue fallando, confirmar desconexión**
     with LOCK:
         if ups["ip"] in DATA:
             DATA[ups["ip"]]["status"] = "Desconectada"
             DATA[ups["ip"]]["latency"] = None
             DATA[ups["ip"]]["ping_response"] = "No respondido"
 
+    # Emitir actualización a la interfaz
+    socketio.emit("new_data", DATA[ups["ip"]])
+
     log_connection_error({
         "timestamp": datetime.now().isoformat(),
         "ip": ups["ip"],
         "name": ups["name"],
         "error_type": "Confirmado: Desconectado",
-        "details": f"No hubo respuesta después de {max_attempts} intentos."
+        "details": f"No hubo respuesta de {ups['ip']} después de {max_attempts} intentos."
     })
-
-    socketio.emit("new_data", DATA[ups["ip"]])
-
 
 def ping_and_https(ups):
     """Realiza un ping y verifica el puerto HTTPS."""
@@ -252,32 +247,54 @@ def ping_and_https(ups):
     }
 
     try:
-        ping_output = execute_ping(ups["ip"], timeout=2)
+        # Ejecutar el comando ping
+        ping_output = subprocess.run(
+            ["ping", "-n", "1", ups["ip"]],
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            text=True,
+            creationflags=subprocess.CREATE_NO_WINDOW  # Evitar que se abra una ventana de consola
+        )
 
         if ping_output.returncode == 0:
+            # Buscar la línea con 'tiempo=' o 'tiempo<' y extraer la latencia
             for line in ping_output.stdout.splitlines():
                 if "tiempo=" in line.lower():
-                 try:
                     latency = line.split("tiempo=")[-1].split("ms")[0].strip()
                     result["latency"] = float(latency)
                     result["status"] = "Conectada"
                     result["ping_response"] = "Ping Exitoso"
 
-                 except ValueError:
-                    result["latency"] = "Error al obtener latencia"
-
+                    # Si estaba en la lista de desconectados, quitarlo
                     with LOCK:
                         DISCONNECTED_DEVICES.discard(ups["ip"])
-                        VALIDATION_QUEUE.discard(ups["ip"])
+                    
+                    # Si la latencia es mayor a 100ms, registrar como posible problema
+                    if result["latency"] > 55:
+                        log_connection_error({
+                            "timestamp": datetime.now().isoformat(),
+                            "ip": ups["ip"],
+                            "name": ups["name"],
+                            "error_type": "Alta Latencia",
+                            "details": f"Latencia alta: {result['latency']} ms"
+                        })
+                  
+                
+                elif "tiempo<" in line.lower():
+                    result["latency"] = 1.0  # Asumimos que es menor a 1 ms
+                    result["status"] = "Conectada"
+                    result["ping_response"] = "Ping Exitoso"
+                    break
 
         else:
             with LOCK:
-                if ups["ip"] not in VALIDATION_QUEUE:
-                    VALIDATION_QUEUE.add(ups["ip"])
-                    threading.Thread(target=validate_disconnection, args=(ups,), daemon=True).start()
+                if ups["ip"] not in DISCONNECTED_DEVICES:
+                  DISCONNECTED_DEVICES.add(ups["ip"])
+                  threading.Thread(target=validate_disconnection, args=(ups,), daemon=True).start()
+
 
     except Exception as e:
-        result["ping_response"] = f"Error en ping: {e}"
+        result["ping_response"] = f"Error en el ping: {e}"
         log_connection_error({
             "timestamp": datetime.now().isoformat(),
             "ip": ups["ip"],
@@ -286,45 +303,54 @@ def ping_and_https(ups):
             "details": str(e)
         })
 
-    # Verificar HTTPS
+    # Verificar puerto HTTPS
     try:
-        if check_https(ups["ip"]):
+        with socket.create_connection((ups["ip"], 443), timeout=4) as sock:
             result["https_check"] = "Puerto HTTPS abierto"
-            if result["status"] == "Desconectada" and result["ping_response"] == "No respondido":
+            if result["status"] == "Desconectada" and result["ping_response"] == "Ping fallido":
                 result["status"] = "Conectada"
-    except Exception as e:
-        result["https_check"] = "Error en HTTPS: " + str(e)
-#        log_connection_error({
-#            "timestamp": datetime.now().isoformat(),
-#            "ip": ups["ip"],
-#            "name": ups["name"],
-#            "error_type": "Error en HTTPS",
-#            "details": str(e)
-#        })
+    except socket.error:
+        result["https_check"] = "Puerto HTTPS cerrado"
+        log_connection_error({
+            "timestamp": datetime.now().isoformat(),
+            "ip": ups["ip"],
+            "name": ups["name"],
+            "error_type": "HTTPS cerrado",
+            "details": f"El puerto 443 en {ups['ip']} está cerrado."
+        })
 
     return result
 
 def monitor_ping_and_https():
-    """Monitorea el estado de las UPS, ejecutando verificaciones de ping y HTTPS."""
+    """Monitorea el estado de las UPS usando ping y HTTPS."""
     global DATA
     while True:
         for ups in UPS_IPS:
-            result = ping_and_https(ups)
-            with LOCK:
-                if ups["ip"] not in DATA:
-                    DATA[ups["ip"]] = result
-                else:
-                    DATA[ups["ip"]].update({k: v for k, v in result.items() if DATA[ups["ip"]].get(k) != v})
+            try:
+                result = ping_and_https(ups)
+                with LOCK:
+                    if ups["ip"] not in DATA:
+                        DATA[ups["ip"]] = result
+                    else:
+                        # Solo actualiza los datos que cambian
+                        DATA[ups["ip"]].update({k: v for k, v in result.items() if DATA[ups["ip"]].get(k) != v})
+                    
+                    # Emitir los nuevos datos solo si hubo cambios
+                    socketio.emit('new_data', DATA[ups["ip"]])  
 
-                socketio.emit("new_data", DATA[ups["ip"]])
+            except Exception as e:
+                log_connection_error({
+                    "timestamp": datetime.now().isoformat(),
+                    "ip": ups["ip"],
+                    "name": ups["name"],
+                    "error_type": "Ping/HTTPS Error",
+                    "details": str(e)
+                })
+                print(f"Error en la monitorización de {ups['ip']}: {e}")  # Debug
 
-        # Validar dispositivos en la sublista con mayor frecuencia
-        for ip in list(VALIDATION_QUEUE):
-            ups = next((u for u in UPS_IPS if u["ip"] == ip), None)
-            if ups:
-                validate_disconnection(ups, max_attempts=3)
+        time.sleep(2)  # Intervalo de monitoreo
 
-        time.sleep(2)  
+
 
 def monitor_snmp():
     """Realiza consultas SNMP en segundo plano para OIDs dinámicos y verifica si los estáticos están actualizados."""
