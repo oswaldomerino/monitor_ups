@@ -14,32 +14,95 @@
       background-color: #f4f7fa;
     }
 
+    /* Sidebar */
     .sidebar {
       background-color: #0056b3;
       color: white;
-      padding: 20px;
-      height: 100vh;
-      position: fixed;
       width: 250px;
+      position: fixed;
+      height: 100vh;
+      transition: transform 0.3s ease-in-out;
+      left: 0;
+      top: 0;
+    }
+
+    .sidebar.collapsed {
+      transform: translateX(-100%);
     }
 
     .sidebar a {
       color: white;
-      text-decoration: none;
-      display: block;
-      padding: 10px 0;
+      display: flex;
+      align-items: center;
+      padding: 10px;
     }
 
+    /* Main content adjustment */
     .main-content {
-      margin-left: 260px;
+      margin-left: 250px;
+      transition: margin-left 0.3s ease-in-out;
       padding: 20px;
     }
+
+    .main-content.collapsed {
+      margin-left: 0;
+    }
+
+    /* Toggle Sidebar Button - Alineado con el search bar */
+    #toggleSidebar {
+      background: #0056b3;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-right: 10px;
+    }
+
+
+    /* Header Bar (Filtros) */
+    #headerBar {
+      position: fixed;
+      top: 0;
+      left: 250px;
+      width: calc(100% - 250px);
+      background: white;
+      z-index: 1030;
+      padding: 10px 15px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      border-bottom: 1px solid #ddd;
+      transition: left 0.3s ease-in-out, width 0.3s ease-in-out;
+    }
+
+    #headerBar.collapsed {
+      left: 0;
+      width: 100%;
+    }
+
+    /* Ajuste del contenedor de los filtros */
+    .filter-container {
+      display: flex;
+      align-items: center;
+      width: 100%;
+    }
+
+    .filter-container input {
+      flex-grow: 1;
+      padding-left: 40px;
+    }
+
+    .content-wrapper {
+      margin-top: 60px;
+    }
+
 
     .ups-card {
       border: 1px solid #ddd;
       border-radius: 8px;
-      padding: 16px;
-      margin-bottom: 16px;
+      padding: 12px;
+      width: 100%;
       transition: transform 0.2s;
     }
 
@@ -126,42 +189,48 @@
 </head>
 
 <body>
+
   <div class="sidebar">
-    <h2>Network Dashboard</h2>
+    <h2>UPS Monitoring</h2>
     <a href="/"><i class="fas fa-home"></i> Overview</a>
     <a href="/devices"><i class="fas fa-desktop"></i> Devices</a>
     <a href="/network"><i class="fas fa-network-wired"></i> Network</a>
     <a href="/monitoring"><i class="fas fa-tools"></i> Monitoreo</a>
   </div>
 
+
+  <div id="headerBar">
+    <div class="filter-container">
+      <button id="toggleSidebar"><i class="fas fa-bars"></i></button>
+      <input type="text" id="searchBar" class="form-control form-control-sm" placeholder="🔍 Buscar">
+      <select id="statusFilter" class="form-select form-select-sm">
+        <option value="all">Todos</option>
+        <option value="connected">Conectados</option>
+        <option value="disconnected">Desconectados</option>
+      </select>
+      <select id="sortFilter" class="form-select form-select-sm">
+        <option value="ip">Ordenar por IP</option>
+        <option value="serial">Ordenar por N/S</option>
+      </select>
+      <select id="sortOrder" class="form-select form-select-sm">
+        <option value="asc">⬆ Ascendente</option>
+        <option value="desc">⬇ Descendente</option>
+      </select>
+      <button id="toggleView" class="btn btn-secondary btn-sm">
+        <i class="fas fa-table"></i> Vista
+      </button>
+    </div>
+  </div>
+
+
+
+  <!-- Espaciado para evitar que el contenido quede oculto bajo el header fijo -->
+  <div style="margin-top: 80px;"></div>
+
+
   <div class="main-content">
-    <div class="d-flex justify-content-between align-items-center mb-4">
-      <h1>UPS Monitoring</h1>
-      <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addUPSModal">Add UPS</button>
-    </div>
 
-    <div class="d-flex justify-content-end mb-4">
-      <button id="toggleView" class="btn btn-secondary">Switch to Table View</button>
-    </div>
 
-    <div class="d-flex mb-3">
-      <input type="text" id="searchBar" class="form-control me-3" placeholder="Search by IP or Name">
-      <select id="statusFilter" class="form-select">
-        <option value="all">All</option>
-        <option value="connected">Connected</option>
-        <option value="disconnected">Disconnected</option>
-      </select>
-      <select id="sortFilter" class="form-select">
-        <option value="ip">Sort by IP</option>
-        <option value="serial">Sort by N/S</option>
-        <option value="name">Sort by Name</option>
-        <option value="temperature">Sort by Temperature</option>
-      </select>
-      <select id="sortOrder" class="form-select">
-        <option value="asc">Ascending</option>
-        <option value="desc">Descending</option>
-      </select>
-    </div>
 
     <div id="ups-list" class="row row-cols-1 row-cols-md-3 g-4">
       <!-- UPS Cards will be dynamically inserted here -->
@@ -188,7 +257,8 @@
     <div class="mt-5">
       <h2>Event Log</h2>
       <div class="d-flex justify-content-between align-items-center mb-3">
-        <input type="text" id="logSearchBar" class="form-control me-3" placeholder="Search logs by IP, Name, or Event Type">
+        <input type="text" id="logSearchBar" class="form-control me-3"
+          placeholder="Search logs by IP, Name, or Event Type">
         <button id="toggleOrder" class="btn btn-outline-secondary">Sort: Newest First</button>
       </div>
       <table class="table table-striped">
@@ -251,7 +321,7 @@
       document.getElementById("toggleView").addEventListener("click", () => {
         currentView = currentView === "card" ? "table" : "card";
         document.getElementById("toggleView").textContent =
-          currentView === "card" ? "Switch to Table View" : "Switch to Card View";
+          currentView === "card" ? "Table" : "Card";
 
         document.getElementById("ups-list").style.display = currentView === "card" ? "flex" : "none";
         document.getElementById("ups-table").style.display = currentView === "table" ? "table" : "none";
@@ -380,10 +450,10 @@
               <td>${ups.ubicacion}</td>
               <td class="${statusClass}">${ups.status}</td>
               <td>${ups.https_check !== "N/A" && ups.https_check
-                ? (ups.https_check === "Puerto HTTPS abierto"
-                  ? '<i class="fa fa-check-circle text-success" title="Puerto HTTPS abierto"></i>'
-                  : '<i class="fa fa-times-circle text-danger" title="Puerto HTTPS cerrado"></i>')
-                : ''}</td>
+              ? (ups.https_check === "Puerto HTTPS abierto"
+                ? '<i class="fa fa-check-circle text-success" title="Puerto HTTPS abierto"></i>'
+                : '<i class="fa fa-times-circle text-danger" title="Puerto HTTPS cerrado"></i>')
+              : ''}</td>
             </tr>
           `;
           upsTableBody.innerHTML += row;
@@ -397,7 +467,7 @@
           return "bg-low-temp";
         } else if (temp > 40) {
           return "bg-critical-high-temp";
-        } else if (temp > 36) {
+        } else if (temp > 38) {
           return "bg-high-temp";
         }
         return "";
@@ -434,10 +504,10 @@
                   <div class="col-6 text-end">
                     <p><strong>HTTPS:</strong>
                       ${ups.https_check !== "N/A" && ups.https_check
-                        ? (ups.https_check === "Puerto HTTPS abierto"
-                          ? '<i class="fa fa-check-circle text-success" title="Puerto HTTPS abierto"></i>'
-                          : '<i class="fa fa-times-circle text-danger" title="Puerto HTTPS cerrado"></i>')
-                        : ''}
+              ? (ups.https_check === "Puerto HTTPS abierto"
+                ? '<i class="fa fa-check-circle text-success" title="Puerto HTTPS abierto"></i>'
+                : '<i class="fa fa-times-circle text-danger" title="Puerto HTTPS cerrado"></i>')
+              : ''}
                     </p>
                   </div>
                 </div>
@@ -481,6 +551,10 @@
                   <button class="btn btn-outline-danger btn-sm" onclick="removeUPS('${ups.ip}')">
                     Remove
                   </button>
+                  <button class="btn btn-info btn-sm" onclick="openRealTimeModal('${ups.ip}')">
+    Ver en tiempo real
+</button>
+
                 </div>
               </div>
             </div>
@@ -634,8 +708,218 @@
         document.getElementById("sort-serial").addEventListener("click", () => sortTable(1, "string"));
         document.getElementById("sort-name").addEventListener("click", () => sortTable(2, "string"));
       });
+
+
+      function openRealTimeModal(ip) {
+        fetch(`/real_time_data/${ip}`)
+          .then(response => response.json())
+          .then(data => {
+            console.log("Datos recibidos:", data);
+
+            // Verificación antes de asignar valores para evitar errores
+            let element;
+
+            element = document.getElementById("batteryPercentage");
+            if (element) element.innerText = `${data.battery_percentage || "--"} %`;
+
+            element = document.getElementById("batteryVoltage");
+            if (element) element.innerText = `${data.battery_voltage || "--"} V`;
+
+            element = document.getElementById("batteryRuntime");
+            if (element) element.innerText = data.battery_runtime;
+
+            element = document.getElementById("batteryHealth");
+            if (element) element.innerText = data.battery_health || "N/A";
+
+            element = document.getElementById("inputVoltage");
+            if (element) element.innerText = `${data.input_voltage || "--"} V`;
+
+            element = document.getElementById("outputVoltage");
+            if (element) element.innerText = `${data.output_voltage || "--"} V`;
+
+            element = document.getElementById("inputFrequency");
+            if (element) element.innerText = `${data.input_frequency || "--"} Hz`;
+
+            element = document.getElementById("outputFrequency");
+            if (element) element.innerText = `${data.output_frequency || "--"} Hz`;
+
+            element = document.getElementById("temperature");
+            if (element) element.innerText = `${parseFloat(data.temperature) || "--"} °C`;
+
+            element = document.getElementById("upsIP");
+            if (element) element.innerText = data.ip_address;
+
+            element = document.getElementById("macAddress");
+            if (element) element.innerText = data.mac_address;
+
+            element = document.getElementById("networkStatus");
+            if (element) element.innerText = data.network_status;
+
+            element = document.getElementById("subnetMask");
+            if (element) element.innerText = data.subnet_mask;
+
+            element = document.getElementById("gateway");
+            if (element) element.innerText = data.gateway;
+
+            element = document.getElementById("ups_name");
+            if (element) element.innerText = data.ups_name;
+
+            element = document.getElementById("upsLocation");
+            if (element) element.innerText = data.ubicacion || "No disponible";
+
+            element = document.getElementById("lastAlarm");
+            if (element) element.innerText = data.last_alarm || "N/A";
+
+            element = document.getElementById("upsModel");
+            if (element) element.innerText = data.ups_model || "N/A";
+
+            element = document.getElementById("upsSerial");
+            if (element) element.innerText = data.ups_serial || "N/A";
+
+            element = document.getElementById("uptime");
+            if (element) element.innerText = data.uptime || "--:--:--";
+
+            // Muestra el modal con los datos actualizados
+            new bootstrap.Modal(document.getElementById("realTimeModal")).show();
+          })
+          .catch(error => console.error("Error obteniendo datos en tiempo real:", error));
+      }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggleButton = document.getElementById("toggleSidebar");
+    const sidebar = document.querySelector(".sidebar");
+    const mainContent = document.querySelector(".main-content");
+    const headerBar = document.getElementById("headerBar");
+
+    if (toggleButton && sidebar && mainContent && headerBar) {
+      toggleButton.addEventListener("click", function () {
+        sidebar.classList.toggle("collapsed");
+        mainContent.classList.toggle("collapsed");
+        headerBar.classList.toggle("collapsed");
+      });
+    } else {
+      console.error("No se encontró uno o más elementos necesarios para el toggle.");
+    }
+  });
+
     </script>
   </div>
+
+
+  <!-- Modal para Datos en Tiempo Real -->
+  <div class="modal fade" id="realTimeModal" tabindex="-1" aria-labelledby="realTimeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-primary text-white">
+          <h5 class="modal-title" id="realTimeModalLabel">Datos en Tiempo Real</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <!-- Sección de Estado de Batería -->
+            <div class="col-md-4">
+              <div class="card shadow-sm text-center p-3">
+                <i class="fas fa-battery-three-quarters fa-2x text-success"></i>
+                <h6 class="mt-2">Porcentaje de Batería</h6>
+                <h4 id="batteryPercentage">-- %</h4>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card shadow-sm text-center p-3">
+                <i class="fas fa-clock fa-2x text-info"></i>
+                <h6 class="mt-2">Tiempo de Operación en Batería</h6>
+                <h4 id="batteryRuntime">--:--:--</h4>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card shadow-sm text-center p-3">
+                <i class="fas fa-bolt fa-2x card-icon text-warning"></i>
+                <h6>Voltaje de Batería</h6>
+                <h4 id="batteryVoltage">-- V</h4>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sección de Voltajes -->
+          <div class="row mt-3">
+            <div class="col-md-6">
+              <div class="card shadow-sm text-center p-3">
+                <i class="fas fa-plug fa-2x text-success"></i>
+                <h6 class="mt-2">Voltaje de Entrada</h6>
+                <h4 id="inputVoltage">-- V</h4>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card shadow-sm text-center p-3">
+                <i class="fas fa-plug fa-2x text-danger"></i>
+                <h6 class="mt-2">Voltaje de Salida</h6>
+                <h4 id="outputVoltage">-- V</h4>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sección de Frecuencia -->
+          <div class="row mt-3">
+            <div class="col-md-6">
+              <div class="card shadow-sm text-center p-3">
+                <i class="fas fa-wave-square fa-2x text-primary"></i>
+                <h6 class="mt-2">Frecuencia de Entrada</h6>
+                <h4 id="inputFrequency">-- Hz</h4>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card shadow-sm text-center p-3">
+                <i class="fas fa-wave-square fa-2x text-info"></i>
+                <h6 class="mt-2">Frecuencia de Salida</h6>
+                <h4 id="outputFrequency">-- Hz</h4>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sección de Temperatura -->
+          <div class="row mt-3">
+            <div class="col-md-12">
+              <div class="card shadow-sm text-center p-3">
+                <i class="fas fa-thermometer-half fa-2x text-danger"></i>
+                <h6 class="mt-2">Temperatura</h6>
+                <h4 id="temperature">-- °C</h4>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sección de Identificación de la UPS -->
+          <div class="row mt-3">
+            <div class="col-md-12">
+              <div class="card shadow-sm p-3">
+                <h6><i class="fas fa-server"></i> Datos de la UPS</h6>
+                <p><strong>Nombre:</strong> <span id="ups_name">--</span></p> <!-- Nuevo campo -->
+                <p><strong>Modelo:</strong> <span id="upsModel">--</span></p>
+                <p><strong>Número de Serie:</strong> <span id="upsSerial">--</span></p>
+                <p><strong>Tiempo en línea:</strong> <span id="uptime">--</span></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sección de Datos de Red -->
+          <div class="row mt-3">
+            <div class="col-md-12">
+              <div class="card shadow-sm p-3">
+                <h6><i class="fas fa-network-wired"></i> Datos de Red</h6>
+                <p><strong>IP:</strong> <span id="upsIP">--</span></p>
+                <p><strong>MAC Address:</strong> <span id="macAddress">--</span></p>
+                <p><strong>Estado de Red:</strong> <span id="networkStatus">--</span></p>
+                <p><strong>Máscara de Subred:</strong> <span id="subnetMask">--</span></p>
+                <p><strong>Puerta de Enlace:</strong> <span id="gateway">--</span></p>
+                <p><strong>Ubicación:</strong> <span id="upsLocation">--</span></p>
+                <p><strong>Última Alarma:</strong> <span id="lastAlarm">--</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </body>
 
 </html>

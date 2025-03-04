@@ -10,6 +10,7 @@ from flask_socketio import SocketIO, emit
 import queue
 import speedtest
 
+import ipaddress
 
 import re
 
@@ -75,7 +76,7 @@ SNMP_PATH = os.path.join(os.getcwd(), "snmp_tools", "SnmpGet.exe")
 SNMP_COMMUNITY = "speyburn"
 OIDS = {
     "battery_voltage": ".1.3.6.1.2.1.33.1.2.4.0",
-    "output_voltage": ".1.3.6.1.2.1.33.1.2.5.0",
+    "output_voltage": ".1.3.6.1.4.1.318.1.1.1.3.2.3.0",
     "input_voltage": ".1.3.6.1.4.1.318.1.1.1.4.2.1.0",
    # "serial_number": ".1.3.6.1.4.1.318.1.4.2.2.1.3.1",
     "temperature": ".1.3.6.1.2.1.33.1.2.7.0",
@@ -90,16 +91,16 @@ STATIC_OIDS = {
     "serial_number": ".1.3.6.1.4.1.318.1.4.2.2.1.3.1",
     "ubicacion": ".1.3.6.1.2.1.1.6.0",
     "nombreUPS": ".1.3.6.1.2.1.1.5.0",
-     "battery_actividad": ".1.3.6.1.2.1.1.3.0"
+    "battery_actividad": ".1.3.6.1.2.1.1.3.0"
 }
 
 # OIDs Dinámicos (se consultan con frecuencia)
 DYNAMIC_OIDS = {
     "battery_voltage": ".1.3.6.1.2.1.33.1.2.4.0",
-    "output_voltage": ".1.3.6.1.2.1.33.1.2.5.0",
-    "input_voltage": ".1.3.6.1.4.1.318.1.1.1.4.2.1.0",
+    "output_voltage":        ".1.3.6.1.4.1.318.1.1.1.4.2.1.0",
+    "input_voltage":         ".1.3.6.1.4.1.318.1.1.1.3.2.1.0",
     "temperature": ".1.3.6.1.2.1.33.1.2.7.0",
-    "battery_status": ".1.3.6.1.2.1.33.1.2.3.0",
+    "battery_status": ".1.3.6.1.4.1.318.1.1.1.2.2.3.0",
 }
 
 
@@ -228,14 +229,15 @@ def validate_disconnection(ups, max_attempts=5, timeout=2):
             DATA[ups["ip"]]["status"] = "Desconectada"
             DATA[ups["ip"]]["latency"] = None
             DATA[ups["ip"]]["ping_response"] = "No respondido"
+            log_connection_error({
+                "timestamp": datetime.now().isoformat(),
+                "ip": ups["ip"],
+                "name": ups["name"],
+                "error_type": "Confirmado: Desconectado",
+                "details": f"No hubo respuesta después de {max_attempts} intentos."
+            })
 
-    log_connection_error({
-        "timestamp": datetime.now().isoformat(),
-        "ip": ups["ip"],
-        "name": ups["name"],
-        "error_type": "Confirmado: Desconectado",
-        "details": f"No hubo respuesta después de {max_attempts} intentos."
-    })
+    
 
     socketio.emit("new_data", DATA[ups["ip"]])
 
@@ -294,13 +296,13 @@ def ping_and_https(ups):
                 result["status"] = "Conectada"
     except Exception as e:
         result["https_check"] = "Error en HTTPS: " + str(e)
-#        log_connection_error({
-#            "timestamp": datetime.now().isoformat(),
-#            "ip": ups["ip"],
-#            "name": ups["name"],
-#            "error_type": "Error en HTTPS",
-#            "details": str(e)
-#        })
+        log_connection_error({
+            "timestamp": datetime.now().isoformat(),
+            "ip": ups["ip"],
+            "name": ups["name"],
+            "error_type": "Error en HTTPS",
+            "details": str(e)
+        })
 
     return result
 
@@ -360,6 +362,13 @@ def monitor_snmp():
 # Almacena IPs que ya han sido reportadas como sin SNMP para evitar registros repetidos
 SNMP_DISABLED_IPS = set()
 
+
+# Lista de mensajes de error que se desean ignorar en el log
+ALERTS_IGNORAR = [
+    "❌ Error al leer el voltaje de entrada",
+    "❌ Error al leer la temperatura"
+]
+
 def check_snmp_alerts(ip, snmp_data):
     """Verifica condiciones críticas en los datos SNMP y registra errores si es necesario."""
     alerts = []
@@ -369,13 +378,13 @@ def check_snmp_alerts(ip, snmp_data):
            for value in snmp_data.values()):
         if ip not in SNMP_DISABLED_IPS:
             SNMP_DISABLED_IPS.add(ip)  # Marcar como sin SNMP
-            log_connection_error({
-                "timestamp": datetime.now().isoformat(),
-                "ip": ip,
-                "name": DATA.get(ip, {}).get("nombreUPS", "Desconocido"),
-                "error_type": "SNMP Desactivado",
-                "details": "El dispositivo no responde a consultas SNMP."
-            })
+ #           log_connection_error({
+  #              "timestamp": datetime.now().isoformat(),
+   #             "ip": ip,
+    #            "name": DATA.get(ip, {}).get("nombreUPS", "Desconocido"),
+     #           "error_type": "SNMP Desactivado",
+      #          "details": "El dispositivo no responde a consultas SNMP."
+       #     })
         return  # No continuar registrando más errores de este dispositivo
 
     # 🔥 Comprobar temperatura alta y baja con nuevos criterios
@@ -397,13 +406,13 @@ def check_snmp_alerts(ip, snmp_data):
     if "input_voltage" in snmp_data:
         try:
             input_v = float(snmp_data["input_voltage"])
-            if input_v > 130:
+            if input_v > 140:
                 alerts.append(f"🔴 Voltaje de entrada EXTREMADAMENTE ALTO: {input_v}V")
-            elif input_v > 129:
+            elif input_v > 134:
                 alerts.append(f"⚠️ Voltaje de entrada alto: {input_v}V")
-            elif 109 > input_v > 0:
+            elif 105 > input_v > 0:
                 alerts.append(f"🔴 Voltaje de entrada EXTREMADAMENTE BAJO: {input_v}V")
-            elif 107 > input_v > 0:
+            elif 100 > input_v > 0:
                 alerts.append(f"⚠️ Voltaje de entrada bajo: {input_v}V")
             elif input_v == 0:
                 alerts.append("⚡ UPS funcionando en baterías (Voltaje de entrada: 0V)")
@@ -411,14 +420,16 @@ def check_snmp_alerts(ip, snmp_data):
             alerts.append("❌ Error al leer el voltaje de entrada")
 
     # 📝 Registrar todas las alertas encontradas
+    # Registrar las alertas que no estén en la lista de ignorados
     for alert in alerts:
-        log_connection_error({
-            "timestamp": datetime.now().isoformat(),
-            "ip": ip,
-            "name": DATA.get(ip, {}).get("nombreUPS", "Desconocido"),
-            "error_type": "Condición Crítica SNMP",
-            "details": alert
-        })
+        if not any(ignore_msg in alert for ignore_msg in ALERTS_IGNORAR):
+            log_connection_error({
+                "timestamp": datetime.now().isoformat(),
+                "ip": ip,
+                "name": DATA.get(ip, {}).get("nombreUPS", "Desconocido"),
+                "error_type": "Condición Crítica SNMP",
+                "details": alert
+            })
 
     # Si SNMP empieza a responder, eliminamos la IP del conjunto SNMP_DISABLED_IPS
     if ip in SNMP_DISABLED_IPS:
@@ -702,8 +713,70 @@ def get_device_name(ip):
     except (socket.herror, socket.gaierror):
         # In case of error, return the IP as the name
         return ip
+    
+####################################################################################
+@app.route("/real_time_data/<ip>")
+def real_time_data(ip):
+    """Consulta SNMP en tiempo real para una UPS específica"""
+    oids = {
+
+        "ups_name":              ".1.3.6.1.2.1.1.5.0",  # Nombre de la UPS
+        "battery_percentage":    ".1.3.6.1.2.1.33.1.2.4.0",
+        "battery_voltage":       ".1.3.6.1.2.1.33.1.2.5.0",
+        "output_voltage":        ".1.3.6.1.4.1.318.1.1.1.4.2.1.0",
+        "input_voltage":         ".1.3.6.1.4.1.318.1.1.1.3.2.1.0",
+        "output_frequency":      ".1.3.6.1.4.1.318.1.1.1.4.2.2.0",
+        "input_frequency":       ".1.3.6.1.4.1.318.1.1.1.3.2.4.0",
+        "battery_status":        ".1.3.6.1.2.1.33.1.2.3.0",
+        "battery_runtime":       ".1.3.6.1.4.1.318.1.1.1.2.2.3.0",
+        "battery_health":        ".1.3.6.1.4.1.318.1.1.1.2.2.1.0",
+        "temperature":           ".1.3.6.1.4.1.318.1.1.1.2.3.2.0",
+        "uptime":                ".1.3.6.1.2.1.1.3.0",
+        "last_alarm":            ".1.3.6.1.4.1.318.1.1.1.2.2.19.0",
+        "ups_model":             ".1.3.6.1.4.1.318.1.1.1.1.1.1.0",
+        "ups_serial":            ".1.3.6.1.4.1.318.1.4.2.2.1.3.1",
+        "ip_address":            ".1.3.6.1.2.1.4.20.1.1.{}".format(ip),
+        "network_status":        ".1.3.6.1.2.1.4.1.0.{}".format(ip),
+        "subnet_mask":           ".1.3.6.1.2.1.4.20.1.3.{}".format(ip),
+        "ubicacion":             ".1.3.6.1.2.1.1.6.0",
+        "mac_address":           ".1.3.6.1.2.1.2.2.1.6.2",
+
+    }
+    
+# Realizar la consulta SNMP
+    result = snmp_query(ip, oids)
+
+    # 🔹 Verificar que tenemos la IP y la máscara para calcular la puerta de enlace
+    if "ip_address" in result and "subnet_mask" in result:
+        try:
+            gateway = calcular_puerta_enlace(result["ip_address"], result["subnet_mask"])
+            result["gateway"] = gateway
+
+            # 🔹 Consultar la MAC Address de la puerta de enlace
+       #     gateway_oid = f".1.3.6.1.2.1.4.22.1.2.2.{gateway}"
+      #      mac_address_result = snmp_query(ip, {"mac_address": gateway_oid})
+
+        #    result["mac_address"] = mac_address_result.get("mac_address", "No disponible")
+
+        except Exception as e:
+            result["gateway"] = "Error calculando"
+            result["mac_address"] = "Error obteniendo MAC"
+
+    # 🔹 Corregir formato de temperatura
+    if "temperature" in result:
+        result["temperature"] = f"{float(result['temperature']) / 10:.1f} °C"
+
+    if "battery_voltage" in result:
+        result["battery_voltage"] = f"{float(result['battery_voltage']) / 10:.1f}"
+
+    return jsonify(result)
 
 
+def calcular_puerta_enlace(ip, mascara):
+    """ Calcula la puerta de enlace con base en la IP y la máscara de subred. """
+    red = ipaddress.IPv4Network(f"{ip}/{mascara}", strict=False)
+    puerta_enlace = list(red.hosts())[0]  # Primera IP disponible
+    return str(puerta_enlace)
 ####################################################################################
 
 # GUI using PyQt5
