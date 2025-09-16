@@ -3093,5 +3093,53 @@
         "name": "laptop",
         "error_type": "Ping error",
         "details": "Ping error: [Errno 2] No such file or directory: 'ping'"
+    },
+    {
+        "timestamp": "2025-09-16T17:23:22.160215",
+        "ip": "10.104.113.35",
+        "name": "Samsung",
+        "error_type": "UPS Agregada"
+    },
+    {
+        "timestamp": "2025-09-16T17:23:22.565091",
+        "ip": "10.104.113.35",
+        "name": "Samsung",
+        "error_type": "Ping error",
+        "details": "Ping error: [Errno 2] No such file or directory: 'ping'"
+    },
+    {
+        "timestamp": "2025-09-16T17:23:28.573039",
+        "ip": "10.104.113.35",
+        "name": "Samsung",
+        "error_type": "Ping error",
+        "details": "Ping error: [Errno 2] No such file or directory: 'ping'"
+    },
+    {
+        "timestamp": "2025-09-16T17:23:34.581941",
+        "ip": "10.104.113.35",
+        "name": "Samsung",
+        "error_type": "Ping error",
+        "details": "Ping error: [Errno 2] No such file or directory: 'ping'"
+    },
+    {
+        "timestamp": "2025-09-16T17:23:40.590469",
+        "ip": "10.104.113.35",
+        "name": "Samsung",
+        "error_type": "Ping error",
+        "details": "Ping error: [Errno 2] No such file or directory: 'ping'"
+    },
+    {
+        "timestamp": "2025-09-16T17:23:46.599199",
+        "ip": "10.104.113.35",
+        "name": "Samsung",
+        "error_type": "Ping error",
+        "details": "Ping error: [Errno 2] No such file or directory: 'ping'"
+    },
+    {
+        "timestamp": "2025-09-16T17:23:52.608063",
+        "ip": "10.104.113.35",
+        "name": "Samsung",
+        "error_type": "Ping error",
+        "details": "Ping error: [Errno 2] No such file or directory: 'ping'"
     }
 ]

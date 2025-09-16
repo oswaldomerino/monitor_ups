@@ -1,3 +1,4 @@
+
 import subprocess
 import time
 import threading
@@ -206,7 +207,20 @@ def monitor_snmp():
 
 @app.route("/")
 def index():
-    return render_template("index.html")
+    return render_template("dashboard.html")
+
+
+@app.route("/devices")
+def devices():
+    return render_template("devices.html")
+
+@app.route("/network")
+def network():
+    return render_template("network.html")
+
+@app.route("/monitoring")
+def monitoring():
+    return render_template("index.html") 
 
 
 @app.route("/data")
@@ -237,6 +251,19 @@ def add_ups():
             "error_type": "UPS Agregada"
         })
     return jsonify({"status": "success"})
+
+# Endpoint para abrir SSH en Linux
+@app.route("/open_ssh")
+def open_ssh():
+    """Abre una terminal SSH con la IP proporcionada (Linux)."""
+    ip = request.args.get("ip")
+    if not ip:
+        return jsonify({"status": "error", "message": "IP address is required"}), 400
+    try:
+        subprocess.Popen(["gnome-terminal", "--", "ssh", ip])
+        return jsonify({"status": "success"})
+    except Exception as e:
+        return jsonify({"status": "error", "message": str(e)}), 500
 
 
 @app.route("/remove", methods=["POST"])

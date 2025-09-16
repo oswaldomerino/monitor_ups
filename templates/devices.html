@@ -77,6 +77,7 @@
 </head>
 
 <body>
+
     <div class="sidebar">
         <h2>Network Dashboard</h2>
         <a href="/"><i class="fas fa-home"></i> Overview</a>
@@ -87,6 +88,15 @@
 
     <div class="content">
         <h2>Devices</h2>
+
+        <!-- Formulario para agregar dispositivo manualmente -->
+        <form id="manual-add-form" onsubmit="addManualDevice(event)" class="mb-4">
+            <div class="input-group mb-3">
+                <input type="text" id="manual-ip" class="form-control" placeholder="Device IP (e.g., 192.168.1.100)" required>
+                <input type="text" id="manual-name" class="form-control" placeholder="Device Name" required>
+                <button class="btn btn-success" type="submit">Add Device</button>
+            </div>
+        </form>
 
         <!-- Formulario para ingresar el rango de IP -->
         <form id="ip-range-form" onsubmit="startScan(event)">
@@ -121,6 +131,34 @@
     </div>
 
     <script>
+
+        async function addManualDevice(event) {
+            event.preventDefault();
+            const ip = document.getElementById('manual-ip').value.trim();
+            const name = document.getElementById('manual-name').value.trim();
+            if (!ip || !name) {
+                alert('Please enter both IP and Name.');
+                return;
+            }
+            try {
+                const response = await fetch('/add', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ ip, name })
+                });
+                if (response.ok) {
+                    alert(`Device with IP ${ip} added to monitoring.`);
+                    document.getElementById('manual-ip').value = '';
+                    document.getElementById('manual-name').value = '';
+                } else {
+                    const res = await response.json();
+                    alert(res.message || 'Failed to add device to monitoring.');
+                }
+            } catch (error) {
+                console.error('Error adding device:', error);
+                alert('An error occurred. Please try again.');
+            }
+        }
         async function startScan(event) {
             event.preventDefault();
             const startIP = document.getElementById('start-ip').value.trim();
