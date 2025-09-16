@@ -2831,5 +2831,267 @@
         "name": "192.168.1.4",
         "error_type": "HTTPS cerrado",
         "details": "El puerto 443 en 192.168.1.4 est\u00e1 cerrado."
+    },
+    {
+        "timestamp": "2025-09-16T17:11:49.820718",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "Ping error",
+        "details": "Ping error: [Errno 2] No such file or directory: 'ping'"
+    },
+    {
+        "timestamp": "2025-09-16T17:11:50.193153",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "Ping error",
+        "details": "Ping error: [Errno 2] No such file or directory: 'ping'"
+    },
+    {
+        "timestamp": "2025-09-16T17:11:53.831397",
+        "ip": "192.168.1.1",
+        "name": "gpon.net",
+        "error_type": "Ping error",
+        "details": "Ping error: [Errno 2] No such file or directory: 'ping'"
+    },
+    {
+        "timestamp": "2025-09-16T17:11:54.209444",
+        "ip": "192.168.1.1",
+        "name": "gpon.net",
+        "error_type": "Ping error",
+        "details": "Ping error: [Errno 2] No such file or directory: 'ping'"
+    },
+    {
+        "timestamp": "2025-09-16T17:11:57.839661",
+        "ip": "192.168.1.4",
+        "name": "192.168.1.4",
+        "error_type": "Ping error",
+        "details": "Ping error: [Errno 2] No such file or directory: 'ping'"
+    },
+    {
+        "timestamp": "2025-09-16T17:11:58.214815",
+        "ip": "192.168.1.4",
+        "name": "192.168.1.4",
+        "error_type": "Ping error",
+        "details": "Ping error: [Errno 2] No such file or directory: 'ping'"
+    },
+    {
+        "timestamp": "2025-09-16T17:12:03.848157",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "Ping error",
+        "details": "Ping error: [Errno 2] No such file or directory: 'ping'"
+    },
+    {
+        "timestamp": "2025-09-16T17:12:04.223461",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "Ping error",
+        "details": "Ping error: [Errno 2] No such file or directory: 'ping'"
+    },
+    {
+        "timestamp": "2025-09-16T17:12:07.855762",
+        "ip": "192.168.1.1",
+        "name": "gpon.net",
+        "error_type": "Ping error",
+        "details": "Ping error: [Errno 2] No such file or directory: 'ping'"
+    },
+    {
+        "timestamp": "2025-09-16T17:12:08.231528",
+        "ip": "192.168.1.1",
+        "name": "gpon.net",
+        "error_type": "Ping error",
+        "details": "Ping error: [Errno 2] No such file or directory: 'ping'"
+    },
+    {
+        "timestamp": "2025-09-16T17:12:11.864755",
+        "ip": "192.168.1.4",
+        "name": "192.168.1.4",
+        "error_type": "Ping error",
+        "details": "Ping error: [Errno 2] No such file or directory: 'ping'"
+    },
+    {
+        "timestamp": "2025-09-16T17:12:12.236069",
+        "ip": "192.168.1.4",
+        "name": "192.168.1.4",
+        "error_type": "Ping error",
+        "details": "Ping error: [Errno 2] No such file or directory: 'ping'"
+    },
+    {
+        "timestamp": "2025-09-16T17:12:17.872764",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "Ping error",
+        "details": "Ping error: [Errno 2] No such file or directory: 'ping'"
+    },
+    {
+        "timestamp": "2025-09-16T17:12:18.244777",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "Ping error",
+        "details": "Ping error: [Errno 2] No such file or directory: 'ping'"
+    },
+    {
+        "timestamp": "2025-09-16T17:12:19.584536",
+        "ip": "192.168.1.4",
+        "name": null,
+        "error_type": "UPS Eliminada"
+    },
+    {
+        "timestamp": "2025-09-16T17:12:21.881372",
+        "ip": "192.168.1.1",
+        "name": "gpon.net",
+        "error_type": "Ping error",
+        "details": "Ping error: [Errno 2] No such file or directory: 'ping'"
+    },
+    {
+        "timestamp": "2025-09-16T17:12:22.253594",
+        "ip": "192.168.1.1",
+        "name": "gpon.net",
+        "error_type": "Ping error",
+        "details": "Ping error: [Errno 2] No such file or directory: 'ping'"
+    },
+    {
+        "timestamp": "2025-09-16T17:12:22.473525",
+        "ip": "192.168.1.10",
+        "name": null,
+        "error_type": "UPS Eliminada"
+    },
+    {
+        "timestamp": "2025-09-16T17:12:25.889553",
+        "ip": "192.168.1.4",
+        "name": "192.168.1.4",
+        "error_type": "Ping error",
+        "details": "Ping error: [Errno 2] No such file or directory: 'ping'"
+    },
+    {
+        "timestamp": "2025-09-16T17:12:26.262095",
+        "ip": "192.168.1.4",
+        "name": "192.168.1.4",
+        "error_type": "Ping error",
+        "details": "Ping error: [Errno 2] No such file or directory: 'ping'"
+    },
+    {
+        "timestamp": "2025-09-16T17:12:28.596976",
+        "ip": "192.168.1.1",
+        "name": null,
+        "error_type": "UPS Eliminada"
+    },
+    {
+        "timestamp": "2025-09-16T17:12:31.900140",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "Ping error",
+        "details": "Ping error: [Errno 2] No such file or directory: 'ping'"
+    },
+    {
+        "timestamp": "2025-09-16T17:12:35.908732",
+        "ip": "192.168.1.1",
+        "name": "gpon.net",
+        "error_type": "Ping error",
+        "details": "Ping error: [Errno 2] No such file or directory: 'ping'"
+    },
+    {
+        "timestamp": "2025-09-16T17:12:39.916530",
+        "ip": "192.168.1.4",
+        "name": "192.168.1.4",
+        "error_type": "Ping error",
+        "details": "Ping error: [Errno 2] No such file or directory: 'ping'"
+    },
+    {
+        "timestamp": "2025-09-16T17:12:45.925125",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "Ping error",
+        "details": "Ping error: [Errno 2] No such file or directory: 'ping'"
+    },
+    {
+        "timestamp": "2025-09-16T17:12:49.933576",
+        "ip": "192.168.1.1",
+        "name": "gpon.net",
+        "error_type": "Ping error",
+        "details": "Ping error: [Errno 2] No such file or directory: 'ping'"
+    },
+    {
+        "timestamp": "2025-09-16T17:12:53.942036",
+        "ip": "192.168.1.4",
+        "name": "192.168.1.4",
+        "error_type": "Ping error",
+        "details": "Ping error: [Errno 2] No such file or directory: 'ping'"
+    },
+    {
+        "timestamp": "2025-09-16T17:12:59.950735",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "Ping error",
+        "details": "Ping error: [Errno 2] No such file or directory: 'ping'"
+    },
+    {
+        "timestamp": "2025-09-16T17:13:03.961015",
+        "ip": "192.168.1.1",
+        "name": "gpon.net",
+        "error_type": "Ping error",
+        "details": "Ping error: [Errno 2] No such file or directory: 'ping'"
+    },
+    {
+        "timestamp": "2025-09-16T17:13:07.969389",
+        "ip": "192.168.1.4",
+        "name": "192.168.1.4",
+        "error_type": "Ping error",
+        "details": "Ping error: [Errno 2] No such file or directory: 'ping'"
+    },
+    {
+        "timestamp": "2025-09-16T17:13:13.977947",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "Ping error",
+        "details": "Ping error: [Errno 2] No such file or directory: 'ping'"
+    },
+    {
+        "timestamp": "2025-09-16T17:13:17.457185",
+        "ip": "192.168.1.4",
+        "name": null,
+        "error_type": "UPS Eliminada"
+    },
+    {
+        "timestamp": "2025-09-16T17:13:17.986421",
+        "ip": "192.168.1.1",
+        "name": "gpon.net",
+        "error_type": "Ping error",
+        "details": "Ping error: [Errno 2] No such file or directory: 'ping'"
+    },
+    {
+        "timestamp": "2025-09-16T17:13:21.994541",
+        "ip": "192.168.1.4",
+        "name": "192.168.1.4",
+        "error_type": "Ping error",
+        "details": "Ping error: [Errno 2] No such file or directory: 'ping'"
+    },
+    {
+        "timestamp": "2025-09-16T17:13:28.003959",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "Ping error",
+        "details": "Ping error: [Errno 2] No such file or directory: 'ping'"
+    },
+    {
+        "timestamp": "2025-09-16T17:13:32.012574",
+        "ip": "192.168.1.1",
+        "name": "gpon.net",
+        "error_type": "Ping error",
+        "details": "Ping error: [Errno 2] No such file or directory: 'ping'"
+    },
+    {
+        "timestamp": "2025-09-16T17:13:36.020610",
+        "ip": "192.168.1.4",
+        "name": "192.168.1.4",
+        "error_type": "Ping error",
+        "details": "Ping error: [Errno 2] No such file or directory: 'ping'"
+    },
+    {
+        "timestamp": "2025-09-16T17:13:42.029358",
+        "ip": "192.168.1.10",
+        "name": "laptop",
+        "error_type": "Ping error",
+        "details": "Ping error: [Errno 2] No such file or directory: 'ping'"
     }
 ]
